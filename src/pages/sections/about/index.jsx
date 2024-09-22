@@ -2,7 +2,7 @@ import React from "react";
 
 export default function index() {
   return (
-    <section id="about" className="bg-gray-200">
+    <section id="about" className="text-gray-200">
       <div className="container ">
         <div className="grid max-[650px]:py-10 grid-cols-2 max-[650px]:grid-cols-1 py-20 relative">
           <div className="px-10">

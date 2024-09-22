@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    background: var(--primary);
+    background: #172554;
 }
 
 .container {
@@ -11,4 +11,13 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+@font-face {
+    font-family: "Atyp-regular";
+    src: url("./public/fonts/AtypDisplayTRIAL-Regular-BF65727125d566e.otf");
+}
+@font-face {
+    font-family: "Atyp-bold";
+    src: url("./public/fonts/AtypDisplayTRIAL-Bold-BF65727125c8d1d.otf");
 }

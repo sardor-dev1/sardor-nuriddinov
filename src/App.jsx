@@ -1,5 +1,5 @@
 import Header from "./components/header";
-import { Hero, Blogs ,About} from "@sections";
+import { Hero, About, Experience, Projects, Contact } from "@sections";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Blogs />
+        <Experience />
+        <Projects />
+        <Contact />
       </main>
     </BrowserRouter>
   );

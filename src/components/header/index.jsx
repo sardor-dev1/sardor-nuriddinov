@@ -67,10 +67,26 @@ const Header = () => {
           </li>
           <li>
             <a
-              href="#blogs"
-              className={activeSection === "blogs" ? "active" : ""}
+              href="#experience"
+              className={activeSection === "experience" ? "active" : ""}
             >
-              Blogs
+              Experience
+            </a>
+          </li>
+          <li>
+            <a
+              href="#works"
+              className={activeSection === "works" ? "active" : ""}
+            >
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className={activeSection === "contact" ? "active" : ""}
+            >
+              Contact
             </a>
           </li>
         </ul>
