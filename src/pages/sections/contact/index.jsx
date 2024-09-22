@@ -63,7 +63,7 @@ export default function ContactForm() {
                 <span className="w-[50px] max-[500px]:w-[30px] h-[50px] max-[500px]:h-[30px]  rounded-md bg-gradient-to-r from-[#52A2D9] to-[#4A57C9] flex items-center justify-center">
                   <FaPhone />
                 </span>
-                <a href="tell:+998 93 467 0522">+998 93 467 0522</a>
+                <a href="tel:+998934670522">+998 93 467 0522</a>
               </div>
               <div className="flex items-center gap-3 text-[18px] max-[500px]:text-[14px] lg:text-[20px]">
                 <span className="w-[50px] max-[500px]:w-[30px] max-[500px]:h-[30px] rounded-md h-[50px] bg-gradient-to-r from-[#52A2D9] to-[#4A57C9] flex items-center justify-center">
