@@ -12,7 +12,35 @@
   backdrop-filter: blur(5px);
 }
 
-/* Active link styling with before and after */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 50;
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.hamburger .line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger .line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
 a {
   position: relative;
   color: white;
@@ -21,7 +49,7 @@ a {
 }
 
 a.active {
-  color: #ff6347; /* Aktiv bo'lgandagi asosiy rang */
+  color: #ff6347;
 }
 
 a::before,
@@ -44,17 +72,41 @@ a::after {
   bottom: -5px;
 }
 
-/* Aktiv bo'lganda chiziqlarni kengaytirish */
 a.active::before,
 a.active::after {
   width: 100%;
 }
 
-/* Scrolled header styling */
-header.transparent {
-  background-color: transparent;
-}
+@media (max-width: 500px) {
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: left 0.3s ease;
+    z-index: 10;
+  }
 
-header.scrolled {
-  background-color: rgba(0, 0, 0, 0.8); /* Skroll qilinganida header fon rangi */
+  .nav-links.open {
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  ul li {
+    text-align: center;
+    width: 100%;
+  }
 }

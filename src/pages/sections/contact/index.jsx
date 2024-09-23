@@ -48,7 +48,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <div className="bg-[#1A367C]  rounded-t-[50px] mt-[40px] h-[60px] w-[100%]"></div>
+      <div className="bg-[#1A367C] relative rounded-t-[50px] mt-[40px] h-[60px] w-[100%]"></div>
       <section
         id="contact"
         className=" bg-[#1A367C] pb-[40px] max-[500px]:pt-0 pt-[20px]"
@@ -84,10 +84,8 @@ export default function ContactForm() {
                   Uchtepa, Toshkent, Uzbekistan
                 </a>
               </div>
-              <div></div>
             </div>
-
-            {/* Right side - Form */}
+            {/* Right */}
             <div className="w-full lg:w-[50%]">
               <h2 className="text-[30px] max-[500px]:text-[24px] font-bold mb-6 text-white">
                 Get in Touch

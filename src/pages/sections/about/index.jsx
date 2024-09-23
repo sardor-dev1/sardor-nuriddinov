@@ -4,30 +4,18 @@ export default function index() {
   return (
     <section id="about" className="text-gray-200">
       <div className="container ">
-        <div className="grid max-[650px]:py-10 grid-cols-2 max-[650px]:grid-cols-1 py-20 relative">
+        <h2 className="text-[32px] text-center pb-10 pt-[60px]">About</h2>
+        <div className="grid max-[650px]:py-10 grid-cols-2 max-[650px]:grid-cols-1 relative">
           <div className="px-10">
-            <h2 className="text-[32px] max-[650px]:text-[22px] font-[600] pb-5">
-              TECHNOLOGIES
-            </h2>
-            <ul className="grid grid-cols-2 max-[500px]:gap-1 max-[950px]:grid-cols-1 gap-2 w-full justify-center items-center pb-[80px]">
-              <li className="text-[16px] font-semibold">HTML5</li>
-              <li className="text-[16px] font-semibold">CSS</li>
-              <li className="text-[16px] font-semibold">Sass</li>
-              <li className="text-[16px] font-semibold">Bootstrap</li>
-              <li className="text-[16px] font-semibold">Tailwind CSS</li>
-              <li className="text-[16px] font-semibold">JavaScript</li>
-              <li className="text-[16px] font-semibold">React </li>
-              <li className="text-[16px] font-semibold">
-                Redux / Redux-tolkit
-              </li>
-              <li className="text-[16px] font-semibold">TypeScript</li>
-              <li className="text-[16px] font-semibold">Next.js</li>
-              <li className="text-[16px] font-semibold">
-                Mui / Ant / Flowbite
-              </li>
-            </ul>
+            <p>
+              Hello, I’m Sardor Nuriddinov, a junior front-end developer. While
+              I don't have professional experience yet, I am passionate about
+              web development and continuously enhancing my skills in JavaScript, Typescript, NextJs and React. I enjoy solving problems and building
+              user-friendly interfaces. I am eager to apply my knowledge in a
+              real-world setting and contribute to meaningful projects.
+            </p>
           </div>
-          <div className="absolute top-[50px]  max-[650px]:hidden left-[50%] bg-gray-400 w-[2px] h-[80%]">
+          <div className="absolute top-[20px]  max-[650px]:hidden left-[50%] bg-gray-400 w-[2px] h-[100%]">
             <div className="w-4 rounded-full absolute top-[-10px] left-[-7px] h-4 bg-inherit"></div>
             <div className="w-4 rounded-full absolute bottom-[-10px] left-[-7px] h-4 bg-inherit"></div>
           </div>
