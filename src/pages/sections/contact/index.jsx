@@ -10,8 +10,6 @@ import { Link } from "react-router-dom";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [buttonDisable, setButtonDisable] = useState(false);
 
@@ -23,9 +21,9 @@ export default function ContactForm() {
 
     const payload = {
       chat_id: chatId,
-      text: `New message received!\n\nName: ${name || "N/A"}\nPhone: ${
-        phone ? `+998${phone}` : "N/A"
-      }\nEmail: ${email || "N/A"}\nMessage: ${message}`,
+      text: `New message received!\n\nName: ${
+        name || "N/A"
+      }\nMessage: ${message}`,
     };
 
     setButtonDisable(true);
@@ -34,8 +32,6 @@ export default function ContactForm() {
       .post(`https://api.telegram.org/bot${botToken}/sendMessage`, payload)
       .then(() => {
         setName("");
-        setPhone("");
-        setEmail("");
         setMessage("");
       })
       .catch(() => {
@@ -100,26 +96,6 @@ export default function ContactForm() {
                   placeholder="Your Name (optional)"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                />
-                <div className="relative">
-                  <span className="absolute left-4 top-[50%] translate-y-[-50%] text-gray-500">
-                    +998
-                  </span>
-                  <input
-                    className="w-full pl-[65px] max-[500px]:py-2 max-[500px]:text-[14px]  p-3 rounded-lg border-2 focus:outline-none focus:border-primary"
-                    type="text"
-                    placeholder="Your Phone Number (optional)"
-                    value={phone}
-                    maxLength={9}
-                    onChange={(e) => setPhone(e.target.value)}
-                  />
-                </div>
-                <input
-                  className="w-full p-3 max-[500px]:p-2 max-[500px]:text-[14px] rounded-lg border-2 focus:outline-none focus:border-primary"
-                  type="email"
-                  placeholder="Your Email (optional)"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <textarea
                   className="w-full p-4 max-[500px]:p-2 max-[500px]:text-[14px] max-[500px]:h-[70px] rounded-lg border-2 focus:outline-none focus:border-primary h-[100px]"

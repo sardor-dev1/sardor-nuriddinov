@@ -1,5 +1,6 @@
 import React from "react";
 import Crypto from "../../../assets/portfolio/crypto.png";
+import IdealCleaning from "../../../assets/ideal-cleaning.png"
 import { Link } from "react-router-dom";
 
 export default function index() {
@@ -45,10 +46,10 @@ export default function index() {
           <div className="flex flex-row-reverse max-[720px]:flex-col gap-8 items-center justify-between">
             <div>
               <h3 className="text-[#cbcdf9] text-[28px] max-[500px]:text-[22px]">
-                Project 1
+                Project 2
               </h3>
               <h4 className="text-white text-[24px] max-[500px]:text-[20px]">
-                Crypto value
+                Ideal Cleaning
               </h4>
               <p className="w-full max-w-[600px] max-[1200px]:max-w-[400px] max-[850px]:max-w-[300px] max-[720px]:max-w-full max-[850px]:text-[14px] max-[850px]:font-[400] text-[16px] font-semibold text-gray-400">
                 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -61,11 +62,11 @@ export default function index() {
               <Link
                 className="z-20"
                 target="_blank"
-                to="https://crypto-project-drab.vercel.app/"
+                to="https://ideal-cleaning-dashboard.vercel.app/services"
               >
                 <img
                   className="rounded-[20px] max-[720px]:rounded-[10px] z-20 w-full h-full object-cover"
-                  src={Crypto}
+                  src={IdealCleaning}
                   alt="Crypto"
                 />
               </Link>

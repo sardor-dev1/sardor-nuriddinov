@@ -20,7 +20,7 @@ export default function index() {
             <div className="w-4 rounded-full absolute bottom-[-10px] left-[-7px] h-4 bg-inherit"></div>
           </div>
           <div className="px-10">
-            <h2 className="text-[32px] max-[650px]:text-[22px] max-[650px]:pb-3 font-[600] pb-5">
+            <h2 className="text-[18px] max-[650px]:text-[16px] max-[650px]:pb-3 font-[600] pb-5">
               SOFT SKILLS
             </h2>
             <ul className="grid grid-cols-2 max-[950px]:grid-cols-1 gap-2 w-full justify-center items-center max-[650px]:pb-[40px] pb-[80px]">

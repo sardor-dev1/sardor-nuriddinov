@@ -86,7 +86,7 @@ const Header = () => {
               className={activeSection === "experience" ? "active" : ""}
               onClick={toggleMenu}
             >
-              Experience
+              Technology
             </a>
           </li>
           <li>
