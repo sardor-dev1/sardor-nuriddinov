@@ -3,6 +3,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
 import axios from "axios";
@@ -118,7 +119,7 @@ export default function ContactForm() {
               </form>
             </div>
           </div>
-          <div className="pt-8 border-t-[1.5px] mt-8">
+          <div className="pt-8 flex justify-center border-t-[1.5px] mt-8">
             <ul className="flex items-center justify-center gap-5">
               <li>
                 <Link target="_blank" to="https://www.instagram.com/sardor_n0/">
@@ -141,6 +142,13 @@ export default function ContactForm() {
                 >
                   <button className="outline-none w-[50px] max-[500px]:w-[40px] max-[500px]:h-[40px] rounded-md h-[50px] text-white text-[28px] max-[500px]:text-[18px] bg-gradient-to-r from-[#52A2D9] to-[#4A57C9] hover:from-[#4A57C9] hover:to-[#52A2D9] duration-150 flex items-center justify-center">
                     <FaLinkedinIn />
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Link target="_blank" to="https://github.com/sardor-dev1">
+                  <button className="outline-none w-[50px] max-[500px]:w-[40px] max-[500px]:h-[40px] rounded-md h-[50px] text-white text-[28px] max-[500px]:text-[18px] bg-gradient-to-r from-[#52A2D9] to-[#4A57C9] hover:from-[#4A57C9] hover:to-[#52A2D9] duration-150 flex items-center justify-center">
+                    <FaGithub />
                   </button>
                 </Link>
               </li>
