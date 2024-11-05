@@ -8,11 +8,15 @@ import { FaPhone } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import MessageModal from "../../../components/message-modal";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [buttonDisable, setButtonDisable] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const botToken = "7793950833:AAHDoN9rZZ-B3yh-YmYMUYiINYPvE5yVgi0";
   const chatId = "7188548579";
@@ -34,12 +38,16 @@ export default function ContactForm() {
       .then(() => {
         setName("");
         setMessage("");
+        setIsSuccess(true);
+        setModalMessage("Message sent successfully!");
       })
       .catch(() => {
-        setButtonDisable(false);
+        setIsSuccess(false);
+        setModalMessage("Failed to send message.");
       })
       .finally(() => {
         setButtonDisable(false);
+        setModalOpen(true);
       });
   };
 
@@ -87,32 +95,29 @@ export default function ContactForm() {
               <h2 className="text-[30px] max-[500px]:text-[24px] font-bold mb-6 text-white">
                 Get in Touch
               </h2>
-              <form
-                onSubmit={handleSubmit}
-                className="flex flex-col max-[500px]:gap-4 gap-6"
-              >
+              <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 <input
-                  className="w-full p-3 max-[500px]:p-2 max-[500px]:text-[14px] rounded-lg border-2 focus:outline-none focus:border-primary"
                   type="text"
                   placeholder="Your Name (optional)"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  className="w-full p-3 rounded-lg border-2 focus:outline-none"
                 />
                 <textarea
-                  className="w-full p-4 max-[500px]:p-2 max-[500px]:text-[14px] max-[500px]:h-[70px] rounded-lg border-2 focus:outline-none focus:border-primary h-[100px]"
                   placeholder="Your Message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required
+                  className="w-full p-4 rounded-lg border-2 focus:outline-none h-[100px]"
                 />
                 <button
                   disabled={buttonDisable}
-                  className={`w-full p-3 max-[500px]:py-2 max-[500px]:text-[14px] rounded-lg text-white font-medium ${
+                  type="submit"
+                  className={`w-full p-3 rounded-lg text-white font-medium ${
                     buttonDisable
                       ? "bg-opacity-50 bg-primary"
                       : "bg-primary hover:shadow-lg"
                   } duration-200`}
-                  type="submit"
                 >
                   Send Message
                 </button>
@@ -156,6 +161,13 @@ export default function ContactForm() {
           </div>
         </div>
       </section>
+      {/* Message Modal */}
+      <MessageModal
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+        message={modalMessage}
+        isSuccess={isSuccess}
+      />
     </>
   );
 }

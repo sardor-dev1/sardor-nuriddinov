@@ -1,5 +1,5 @@
 import React from "react";
-import People from "../../../assets/my-image.jpg";
+import People from "../../../assets/my-image.png";
 import "./style.css";
 import Resume from "../../../public/resume/sardor-nuriddinov.pdf";
 

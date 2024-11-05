@@ -7,21 +7,24 @@ html {
 }
 
 :root {
-    background: #172554;
+  background: #172554;
 }
 
 .container {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: 500px) {
+    padding: 0 15px;
+  }
 }
 
 @font-face {
-    font-family: "Atyp-regular";
-    src: url("./public/fonts/AtypDisplayTRIAL-Regular-BF65727125d566e.otf");
+  font-family: "Atyp-regular";
+  src: url("./public/fonts/AtypDisplayTRIAL-Regular-BF65727125d566e.otf");
 }
 @font-face {
-    font-family: "Atyp-bold";
-    src: url("./public/fonts/AtypDisplayTRIAL-Bold-BF65727125c8d1d.otf");
+  font-family: "Atyp-bold";
+  src: url("./public/fonts/AtypDisplayTRIAL-Bold-BF65727125c8d1d.otf");
 }

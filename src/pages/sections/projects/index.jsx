@@ -1,6 +1,6 @@
 import React from "react";
 import Crypto from "../../../assets/portfolio/crypto.png";
-import IdealCleaning from "../../../assets/ideal-cleaning.png"
+import IdealCleaning from "../../../assets/ideal-cleaning.png";
 import { Link } from "react-router-dom";
 
 export default function index() {
@@ -21,10 +21,13 @@ export default function index() {
                 Crypto value
               </h4>
               <p className="w-full max-w-[600px] max-[1200px]:max-w-[400px] max-[850px]:max-w-[300px] max-[720px]:max-w-full max-[850px]:text-[14px] max-[850px]:font-[400] text-[16px] font-semibold text-gray-400">
-                1 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Culpa, doloremque sed quos rerum possimus cum quidem ea
-                recusandae autem nam et sunt nostrum sint earum ex consequatur?
-                Nostrum, odit earum.
+                I created a website about cryptocurrencies. This site provides
+                users with comprehensive information on crypto market news,
+                analyses, and prices. Through the website, users can stay
+                updated on the latest cryptocurrency news, track market trends,
+                and view prices of various tokens. Additionally, the site
+                includes helpful tips, analytical articles, and tools to assist
+                in monitoring the market.
               </p>
             </div>
             <div className="relative cursor-all-scroll hover:opacity-75  z-20 w-[500px] max-[1100px]:w-[400px] max-[930px]:w-[320px] max-[720px]:w-[80%] max-[420px]:w-full h-[350px] max-[1100px]:h-[300px] max-[930px]:h-[250px] max-[720px]:h-auto">
@@ -52,10 +55,14 @@ export default function index() {
                 Ideal Cleaning
               </h4>
               <p className="w-full max-w-[600px] max-[1200px]:max-w-[400px] max-[850px]:max-w-[300px] max-[720px]:max-w-full max-[850px]:text-[14px] max-[850px]:font-[400] text-[16px] font-semibold text-gray-400">
-                1 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Culpa, doloremque sed quos rerum possimus cum quidem ea
-                recusandae autem nam et sunt nostrum sint earum ex consequatur?
-                Nostrum, odit earum.
+                I created a website about cleaning clothes. This site provides
+                users with in-depth information on how to properly care for and
+                clean different types of clothing. Users can find tips on stain
+                removal, washing techniques, fabric care, and eco-friendly
+                cleaning products. The website also includes guides on handling
+                delicate fabrics, preserving colors, and maintaining clothing
+                quality, helping users keep their wardrobes fresh and
+                long-lasting.
               </p>
             </div>
             <div className="relative cursor-all-scroll hover:opacity-75  z-20 w-[500px] max-[1100px]:w-[400px] max-[930px]:w-[320px] max-[720px]:w-[80%] max-[420px]:w-full h-[350px] max-[1100px]:h-[300px] max-[930px]:h-[250px] max-[720px]:h-auto">
